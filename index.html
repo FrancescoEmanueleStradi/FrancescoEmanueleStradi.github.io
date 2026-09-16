@@ -19,6 +19,14 @@
 @media(max-width:850px){.nav{flex-wrap:wrap;padding:15px 0;gap:12px}.brand{font-size:23px}.wrap{width:calc(100% - 48px)}.hero{gap:35px;padding-top:55px}.hero h1{font-size:52px;letter-spacing:-2px}.section-grid{grid-template-columns:180px 1fr;gap:25px}.footer-top{grid-template-columns:1fr 1fr}.footer-top>div:last-child{grid-column:1/-1}.socials{flex-direction:row;gap:25px}.portrait figcaption{font-size:11px}.nav-links{gap:22px}}
 @media(max-width:600px){html{scroll-padding-top:125px}.wrap{width:calc(100% - 40px)}.nav{min-height:96px;align-items:flex-start;flex-direction:column;justify-content:center;gap:7px;padding:12px 0}.brand{font-size:23px}.nav-links{justify-content:space-between;width:100%;gap:12px}.nav-links a{font-size:13px}.nav-links .nav-cv{padding:2px 10px}.hero{grid-template-columns:1fr;gap:36px;padding:42px 0 32px}.hero h1{font-size:52px}.eyebrow{margin-bottom:18px}.intro{font-size:18px}.portrait{max-width:100%;width:100%}.portrait-frame{aspect-ratio:4/3}.portrait figcaption{font-size:12px}.topics{gap:8px 20px}.topics span:first-child{width:100%}.section{padding:44px 0}.section-grid{grid-template-columns:1fr;gap:25px}.section h2{font-size:32px}.section-heading{align-items:start}.section-heading>a{font-size:12px;white-space:nowrap;margin-top:30px}.year-group{grid-template-columns:1fr;gap:0;padding-top:15px}.year-group h3{margin:15px 0 0;font-size:25px}.paper h4{font-size:23px}.filters{gap:6px}.filters button{font-size:13px;padding:7px 14px}.teaching-meta{flex-direction:column;gap:2px}.footer{padding-top:40px}.footer-top{grid-template-columns:1fr;gap:28px}.footer-top>div:last-child{grid-column:auto}.footer-bottom{margin-top:30px}.thesis{padding:23px}.monogram{font-size:100px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Keep the portrait compact and preserve the original image proportions. */
+.portrait{width:100%;max-width:280px;justify-self:center;align-self:center}
+.portrait-frame{aspect-ratio:auto;min-height:0;background:transparent;overflow:visible}
+.portrait-frame img{position:relative;display:block;width:auto;max-width:100%;height:auto;max-height:330px;object-fit:contain;border-radius:3px;grid-area:1/1;z-index:1}
+.portrait-frame .monogram{grid-area:1/1;font-size:90px;padding:65px 30px}
+.portrait-frame:has(img:not([hidden])) .monogram{display:none}
+@media(max-width:600px){.portrait{max-width:220px}.portrait-frame img{max-height:260px}}
 </style>
 </head>
 <body id="top">

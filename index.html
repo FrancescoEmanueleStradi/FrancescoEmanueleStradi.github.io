@@ -15,6 +15,7 @@
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23245c53'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Georgia' font-size='42' fill='%23f7f5f0'%3ES%3C/text%3E%3C/svg%3E">
 
+  
   <style>
     :root {
       --bg: #f7f5f0;
@@ -748,6 +749,18 @@
 
       * {
         transition: none !important;
+      }
+    }
+    
+    @media (min-width: 601px) {
+      .hero {
+        grid-template-columns: 205px minmax(0, 1fr);
+      }
+      .hero .portrait {
+        max-width: 205px;
+      }
+      .hero .portrait-frame img {
+    max-height: 255px;
       }
     }
   </style>

@@ -8,7 +8,7 @@
   <meta property="og:site_name" content="Francesco Emanuele Stradi">
   <meta property="og:title" content="Francesco Emanuele Stradi | Research">
   <meta name="google-site-verification" content="Gx9dtKNk0RqjjNoOzVA_kF6_vmxZEOLvBWzdHmyl_qs">
-  <meta name="theme-color" content="#f7f5f0">
+  <meta name="theme-color" content="#fcfcfd">
 
   <title>Francesco Emanuele Stradi | Research</title>
 
@@ -785,6 +785,43 @@
       
     ::selection {
       background: #d9e3ef;
+    }
+
+    /* Sfondo bianco freddo e sfumatura blu */
+    :root {
+      --bg: #fcfcfd;
+      --line: #dfe3e9;
+    }
+    
+    body {
+      background-color: var(--bg);
+      background-image: radial-gradient(
+        ellipse 650px 320px at calc(50% - 380px) 190px,
+        rgba(41, 71, 102, 0.09) 0%,
+        rgba(41, 71, 102, 0.035) 45%,
+        rgba(41, 71, 102, 0) 75%
+      );
+      background-repeat: no-repeat;
+    }
+    
+    /* Barra fissa coordinata */
+    .header {
+      background: rgba(252, 252, 253, 0.94);
+    }
+    
+    .nav-links .nav-cv {
+      border-color: #bdc7d2;
+    }
+    
+    /* Sfumatura adattata al telefono */
+    @media (max-width: 600px) {
+      body {
+        background-image: radial-gradient(
+          ellipse 360px 280px at 10% 180px,
+          rgba(41, 71, 102, 0.09) 0%,
+          rgba(41, 71, 102, 0) 75%
+        );
+      }
     }
   </style>
 </head>
